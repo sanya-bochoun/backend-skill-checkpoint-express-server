@@ -35,8 +35,8 @@ export const validateAnswer = (req, res, next) => {
   }
   
   // ตรวจสอบความยาวของข้อมูล
-  if (content.length < 10 || content.length > 1000) {
-    return res.status(400).json({ message: 'เนื้อหาคำตอบต้องมีความยาว 10-1000 ตัวอักษร' });
+  if (content.length > 300) {
+    return res.status(400).json({ message: 'เนื้อหาคำตอบต้องไม่เกิน 300 ตัวอักษร' });
   }
   
   next();
