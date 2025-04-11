@@ -4,11 +4,16 @@ import {
   getQuestionById,
   createQuestion,
   updateQuestion,
-  deleteQuestion
+  deleteQuestion,
+  searchQuestions,
+  voteQuestion
 } from '../controllers/questionController.js';
 import { validateQuestion } from '../middleware/validator.js';
 
 const router = express.Router();
+
+// ค้นหาคำถาม
+router.get('/search', searchQuestions);
 
 // GET /questions - ดึงข้อมูลคำถามทั้งหมด
 router.get('/', getAllQuestions);
@@ -24,5 +29,8 @@ router.put('/:id', validateQuestion, updateQuestion);
 
 // DELETE /questions/:id - ลบคำถาม
 router.delete('/:id', deleteQuestion);
+
+// โหวตคำถาม
+router.post('/:id/vote', voteQuestion);
 
 export default router; 
