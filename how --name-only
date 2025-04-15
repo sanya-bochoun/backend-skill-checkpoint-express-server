@@ -1,6 +1,0 @@
-[33mb66c923[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/Software_Requirements[m[33m, [m[1;31morigin/feature/Software_Requirements[m[33m)[m feat: add voting system for questions and answers
-[33mfece2a8[m[33m ([m[1;32mfeature/API_App[m[33m, [m[1;32mdev-eak[m[33m)[m modified: app.mjs add middleware
-[33mc6f0af9[m feat: app.mjs/middleware/routes/controllers
-[33m6abb0dc[m[33m ([m[1;32mfeature/Connection_Pool[m[33m)[m feat: add connectionPool and testConnection.mjs for test Data base
-[33med1460f[m feat: Project init
-[33mb850e3b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Initial commit

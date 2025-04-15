@@ -14,6 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 // Swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
+// Root route - redirect to API documentation
+app.get('/', (req, res) => {
+  res.send('Welcome to Q&A API Server');
+});
+
 // Routes
 app.use("/api/questions", questionRoutes);
 app.use("/api/answers", answerRoutes);
